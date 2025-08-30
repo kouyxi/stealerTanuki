@@ -1,8 +1,9 @@
 <script setup lang="ts">
-   
+import Header from "../../components/Header/Header.vue";
+import Hero from "../../components/Hero/Hero.vue";
 </script>
 
 <template>
-  <h1>Landing Page</h1>
+  <Header />
+  <Hero />
 </template>
-
