@@ -4,6 +4,7 @@ export default {
     "app.vue",
     "modules/**/*.vue",
     "components/**/*.vue",
+    "layouts/**/*.vue",
     "assets/presets/lara/**/*.{js,vue,ts}",
   ],
   darkMode: "class",
