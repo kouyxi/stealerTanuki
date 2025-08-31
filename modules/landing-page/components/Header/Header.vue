@@ -1,5 +1,7 @@
 <script setup lang="ts">
-
+const emit = defineEmits<{
+  (e: "wants-be-creator"): void;
+}>();
 </script>
 
 <template>
@@ -15,6 +17,7 @@
         </div>
         <div class="hidden md:flex">
           <Button
+            @click="() => emit('wants-be-creator')"
             label="Continuar como Creator"
             icon-pos="right"
             icon="pi pi-arrow-right"
