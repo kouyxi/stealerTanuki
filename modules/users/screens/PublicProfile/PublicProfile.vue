@@ -14,4 +14,8 @@ import PublicHeadline from "../../components/PublicHeadline/PublicHeadline.vue";
       <WidgetCondensed :value="5" label="Reports Pagos"></WidgetCondensed>
     </WidgetGroupLoader>
   </WidgetGroup>
+
+  <WidgetDefault title="Todos os reports">
+    reports
+  </WidgetDefault>
 </template>
