@@ -1,4 +1,4 @@
-import Aura from '@primeuix/themes/aura';
+import Aura from "@primeuix/themes/aura";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -10,6 +10,9 @@ export default defineNuxtConfig({
     "@primevue/nuxt-module",
   ],
   css: ["primeicons/primeicons.css"],
+  imports: {
+    dirs: ["./composables/useMarkdown"],
+  },
   googleFonts: {
     base64: true,
     fontsDir: "assets/fonts",
