@@ -5,6 +5,16 @@ import WidgetCondensed from "~/modules/reports/components/Widget/Condensed/Conde
 import PublicHeadline from "../../components/PublicHeadline/PublicHeadline.vue";
 import WriteupCardGroup from "~/modules/writeup/components/Card/Group/Group.vue";
 import WriteupCardItem from "~/modules/writeup/components/Card/Item/Item.vue";
+import WriteupCardGroupLoader from "~/modules/writeup/components/Card/Group/Loader.vue";
+
+const route = useRoute();
+const router = useRouter();
+
+const handleNavigateToDetail = (id: string) => {
+  const { username } = route.params;
+
+  router.push(`/${username}/writeup/${id}`);
+};
 </script>
 
 <template>
@@ -19,10 +29,18 @@ import WriteupCardItem from "~/modules/writeup/components/Card/Item/Item.vue";
 
   <WidgetDefault title="Todos os reports">
     <WriteupCardGroup>
-      <WriteupCardItem />
-      <WriteupCardItem />
-      <WriteupCardItem />
-      <WriteupCardItem />
+      <WriteupCardGroupLoader :loading="false">
+        <WriteupCardItem
+          @tap="handleNavigateToDetail"
+          v-for="n in 10"
+          :key="n"
+          id="123"
+          title="IDOR leading to RCE"
+          description="OH MY GOD, WHAT INSANE VULN"
+          :price="10"
+          category="IDOR"
+        />
+      </WriteupCardGroupLoader>
     </WriteupCardGroup>
   </WidgetDefault>
 </template>
