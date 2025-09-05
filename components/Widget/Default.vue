@@ -6,10 +6,10 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="rounded-lg p-5 bg-white overflow-inherit">
+  <div class="rounded-lg p-5 bg-gray-700 overflow-inherit">
     <div class="flexjustify-between items-center" v-if="props.title">
       <div class="flex-flex-col gap-1">
-        <h3 class="font-[Inter] text-lg font-bold text-left text-gray-700">
+        <h3 class="font-[Inter] text-lg font-bold text-left text-white">
           {{ props.title }}
         </h3>
         <p

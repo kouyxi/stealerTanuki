@@ -18,9 +18,11 @@ import WriteupCardItem from "~/modules/writeup/components/Card/Item/Item.vue";
   </WidgetGroup>
 
   <WidgetDefault title="Todos os reports">
-    <WriteupCardGroup> 
-      <WriteupCardItem></WriteupCardItem>
-
+    <WriteupCardGroup>
+      <WriteupCardItem />
+      <WriteupCardItem />
+      <WriteupCardItem />
+      <WriteupCardItem />
     </WriteupCardGroup>
   </WidgetDefault>
 </template>

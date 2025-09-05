@@ -9,10 +9,13 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@primevue/nuxt-module",
   ],
+
   css: ["primeicons/primeicons.css"],
+
   imports: {
     dirs: ["./composables/useMarkdown"],
   },
+
   googleFonts: {
     base64: true,
     fontsDir: "assets/fonts",
